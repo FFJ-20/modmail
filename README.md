@@ -2,8 +2,7 @@
 A Simple ModMail Bot Source Code made using Discord.js
 
 ## Instructions
-Go to config.json file and edit all the Information.
-Token = Your Bot's Token.
+Go to config.json file and edit all the Information.\nToken = Your Bot's Token.
 Prefix = Your Bot's Prefix.
 Guild = Your Server/Guild ID.
 Category = Category ID in which Bot will create Tickets.

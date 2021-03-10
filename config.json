@@ -3,7 +3,7 @@
   "prefix": "?",
   "guild": "Your Guild ID",
   "category": "Category ID for Tickets",
-  "roles": ["Role1ID", "Role2ID", "Role3ID", ...], //These roles will get perms to view tickets.
+  "roles": ["Role1ID", "Role2ID", "Role3ID", "..."], //These roles will get perms to view tickets.
   "activity": "Direct Messages",
   "type": "WATCHING",
   "status": "online"

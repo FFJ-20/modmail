@@ -1,10 +1,10 @@
 {
-  "token": "ODE2OTU4MzY2Njk3NjUyMjM1.YEChxA.Esg9A2dOOKU_W6lQMzev6mEixWA",
+  "token": "Token",
   "prefix": "?",
-  "guild": "819107093164195851",
-  "category": "819107093164195852",
-  "roles": ["819107152043573248"],
+  "guild": "Your Guild ID",
+  "category": "Category ID for Tickets",
+  "roles": ["Role1ID", "Role2ID", "Role3ID", ...], //These roles will get perms to view tickets.
   "activity": "Direct Messages",
   "type": "WATCHING",
-  "status": "dnd"
+  "status": "online"
 }

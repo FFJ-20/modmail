@@ -21,8 +21,6 @@ module.exports = {
     
     let data = db.get(`blacklist_${user.id}`)
     
-    let check = 0
-    
     if (!args[1]) return message.channel.send(":x: Please Enter a Blacklist Status.\n\`true\` or \`false\`.")
     
     if (args[1].toLowerCase() === "true") {

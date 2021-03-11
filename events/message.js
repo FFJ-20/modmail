@@ -27,6 +27,10 @@ module.exports = async (message, client) => {
   
   else if (message.channel.type === "dm" && !message.author.bot) {
     
+    let blacklist = db.get(`blacklist_${message.author.id}`)
+    
+    if (blacklist === true) return message.react("❌")
+
     if (!config.guild) return console.log("Guild ID has not been Given in Config.")
     
     let guild = client.guilds.cache.get(config.guild)

@@ -50,13 +50,6 @@ module.exports = async (message, client) => {
     if (data === null) {
       
    let ticket = await guild.channels.create(`${message.author.username}-${message.author.discriminator}`, { topic: `Ticket Owner: ${message.author.tag} | ${message.author.id}`, parent: category })
-      
-     ticket.updateOverwrite(message.author, {
-       "VIEW_CHANNEL": true,
-       "SEND_MESSAGES": true,
-       "ATTACH_FILES": true,
-       "READ_MESSAGE_HISTORY": true
-     })
      
      ticket.updateOverwrite(guild.id, {
        "VIEW_CHANNEL": false

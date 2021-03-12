@@ -60,6 +60,8 @@ module.exports = async (message, client) => {
        for (let i = 0; i < config.roles.length; i++) {
          let r = guild.roles.cache.get(config.roles[i])
        
+       if (!r) return console.log(`Invalid Role ID ${config.roles[i]} in Config.`)
+
        ticket.updateOverwrite(r, {
          "VIEW_CHANNEL": true,
          "SEND_MESSAGES": true,

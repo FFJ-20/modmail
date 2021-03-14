@@ -3,7 +3,7 @@ const config = require("../config.json")
 
 module.exports = {
   name: "reply",
-  description: "Replies to Ticket Author",
+  aliases: ["r"],
   run: async (message, args, client) => {
     
     let data = db.get(`ticket_${message.channel.id}`)

@@ -17,11 +17,11 @@ module.exports = async (message, client) => {
     if (cmd.length === 0) return;
     
 
-    let command = client.commands.get(cmd)
-  
+    let command = client.commands.get(cmd) || client.aliases.get(cmd)
+
     if (!command) return;
-  
-    else command.run(message, args, client)
+
+    command.run(message, args, client)
         
   }
   

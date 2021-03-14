@@ -16,10 +16,10 @@ for (let commands of files) {
     client.commands.set(cmd.name, cmd)
   }
 
-  if (cmd.aliases && Array.isArray(cmd.aliases) {
+  if (cmd.aliases && Array.isArray(cmd.aliases)) {
     client.aliases.set(cmd.aliases, cmd)
   
-}
+}{
 
 
 client.on("ready", async () => {

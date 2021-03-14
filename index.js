@@ -17,9 +17,10 @@ for (let commands of files) {
   }
 
   if (cmd.aliases && Array.isArray(cmd.aliases)) {
-    client.aliases.set(cmd.aliases, cmd)
-  
-}{
+    for (let i = 0; i < cmd.aliases.length; i++) {
+    client.aliases.set(cmd.aliases[i], cmd)
+    }
+  }}
 
 
 client.on("ready", async () => {

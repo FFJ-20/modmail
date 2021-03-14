@@ -2,7 +2,7 @@ const discord = require("discord.js")
 
 module.exports = {
   name: "anonymous",
-  aliases: ["anonreply", "anon", "ar"]
+  aliases: ["anonreply", "anon", "ar"],
   run: async (message, args, client) => {
     
     let data = db.get(`ticket_${message.channel.id}`)

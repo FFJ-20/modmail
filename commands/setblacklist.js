@@ -4,7 +4,7 @@ const config = require("../config.json")
 
 module.exports = {
   name: "setblacklist",
-  description: "Blackist/Unblacklist a User from ModMail",
+  aliases: [],
   run: async (message, args, client) => {
     
     if (!config.roles) return message.channel.send(":x: No ModRole has been Added in Config.")

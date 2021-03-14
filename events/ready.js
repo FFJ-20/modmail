@@ -12,7 +12,7 @@ module.exports = async (client) => {
 
   client.user.setPresence({
     activity: {
-      "name": config.activity
+      "name": config.activity,
       "type": config.type
     },
     status: config.status

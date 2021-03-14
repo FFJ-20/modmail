@@ -26,7 +26,9 @@ module.exports = {
    
    if (!args[0] && message.attachments.array().length === 0) return message.channel.send(":x: No Content or Attachment have been Included.")
     
-    require("../execute/senddm.js")(message, user, channel, client)
+   let anonymous = false
+
+    require("../execute/senddm.js")(message, user, channel, anonymous, client)
     
   }
 }

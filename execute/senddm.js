@@ -1,6 +1,6 @@
 const discord = require("discord.js")
 
-module.exports = async (message, user, channel, anonymous, client) => {
+module.exports = async (message, args, user, channel, anonymous, client) => {
   
   let embed = new discord.MessageEmbed()
   .setDescription(message.content.split(" ").slice(1).join(" "))

@@ -29,7 +29,7 @@ module.exports = {
    
    let anonymous = true
     
-    require("../execute/senddm.js")(message, user, channel, anonymous, client)
+    require("../execute/senddm.js")(message, args, user, channel, anonymous, client)
     
   }
 }
